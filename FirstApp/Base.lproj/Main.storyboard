@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBU-MD-O6Z">
+                                <rect key="frame" x="20" y="64" width="374" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihG-S0-77v">
+                                <rect key="frame" x="20" y="176" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JLB-5g-Y7d"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="bTd-gS-Ghd"/>
+                                    <constraint firstAttribute="width" constant="374" id="mab-9y-DcY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HMO-6n-aK3">
+                                <rect key="frame" x="20" y="236" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FaN-4J-YvS"/>
+                                    <constraint firstAttribute="width" constant="374" id="qRe-CE-rMP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ytb-GO-PCJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuG-l5-MS4">
+                                <rect key="frame" x="149.5" y="295" width="115" height="46"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="PCf-du-Dg2"/>
+                                    <constraint firstAttribute="width" constant="115" id="VmX-aH-dhG"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LBU-MD-O6Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7xF-MQ-UUm"/>
+                            <constraint firstItem="HMO-6n-aK3" firstAttribute="top" secondItem="ihG-S0-77v" secondAttribute="bottom" constant="20" id="Cib-sr-iYv"/>
+                            <constraint firstItem="ihG-S0-77v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Eib-Kq-Gjo"/>
+                            <constraint firstItem="HuG-l5-MS4" firstAttribute="centerX" secondItem="HMO-6n-aK3" secondAttribute="centerX" id="FcE-bU-Gmr"/>
+                            <constraint firstItem="LBU-MD-O6Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="U1V-pD-ixd"/>
+                            <constraint firstItem="HuG-l5-MS4" firstAttribute="top" secondItem="HMO-6n-aK3" secondAttribute="bottom" constant="19" id="V5I-aq-HpD"/>
+                            <constraint firstItem="HMO-6n-aK3" firstAttribute="leading" secondItem="ihG-S0-77v" secondAttribute="leading" id="X8a-PP-fFB"/>
+                            <constraint firstItem="HMO-6n-aK3" firstAttribute="trailing" secondItem="ihG-S0-77v" secondAttribute="trailing" id="aBx-gj-UwH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ihG-S0-77v" secondAttribute="trailing" constant="20" id="cvU-zt-TON"/>
+                            <constraint firstItem="ihG-S0-77v" firstAttribute="top" secondItem="LBU-MD-O6Z" secondAttribute="bottom" constant="66.5" id="q8K-Ur-evc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LBU-MD-O6Z" secondAttribute="trailing" constant="20" id="y3h-zd-slD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LoginButton" destination="HuG-l5-MS4" id="PIy-Mv-Q6d"/>
+                        <outlet property="UserEmail" destination="ihG-S0-77v" id="Hxa-hu-2Nz"/>
+                        <outlet property="UserPassword" destination="HMO-6n-aK3" id="VEe-lA-dwY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
